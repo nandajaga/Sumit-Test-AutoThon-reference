@@ -21,10 +21,11 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
+//import io.restassured.RestAssured;
+//import io.restassured.response.Response;
+import com.jayway.restassured.response.Response;
+import static com.jayway.restassured.RestAssured.*;
 
-@SuppressWarnings("serial")
 public class getResponse{
 	String responseFromESL;
 	HashMap<String, List<String>> protocolSpeed = new HashMap<String, List<String>>();
@@ -33,8 +34,9 @@ public class getResponse{
 	File responseFile;
 
 	
-	public void getResponse(String endPoint, String myRequest) throws IOException {
-		RestAssured.useRelaxedHTTPSValidation();
+	
+	public void getResponseFromService(String endPoint, String myRequest) throws IOException {
+		//RestAssured.useRelaxedHTTPSValidation();
 		Response response = given().auth().basic("eslsvc", "W0rkgppw1").contentType("application/xml").body(myRequest)
 				.when().get(endPoint).then().extract().response();
 		responseFromESL = response.asString();
