@@ -1,0 +1,39 @@
+<suite name="Suite1" verbose="1" parallel="tests" thread-count="4">
+
+    <test name="FIREFOX TEST1" >
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="platform" value="winoows"></parameter>
+        <parameter name="isRemoteExecution" value="false"></parameter>
+        <classes>
+            <class name="TestPackage.GridDemo" />
+        </classes>
+    </test>
+
+    <test name="CHROME TEST1">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="platform" value="winoows"></parameter>
+        <parameter name="isRemoteExecution" value="false"></parameter>
+        <classes>
+            <class name="TestPackage.GridDemo"/>
+        </classes>
+    </test>
+
+    <test name="FIREFOX TEST2" >
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="platform" value="winoows"></parameter>
+        <parameter name="isRemoteExecution" value="false"></parameter>
+        <classes>
+            <class name="TestPackage.GridDemo" />
+        </classes>
+    </test>
+
+    <test name="CHROME TEST2">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="platform" value="winoows"></parameter>
+        <parameter name="isRemoteExecution" value="false"></parameter>
+        <classes>
+            <class name="TestPackage.GridDemo"/>
+        </classes>
+    </test>
+
+</suite>

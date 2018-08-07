@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test-Automation" parallel="methods" thread-count="2" verbose="1">
+    <test name="Suite Test" parallel="methods" thread-count="2" verbose="1">
+        <classes>
+            <class name="TestPackage.TestRun1">
+                <methods>
+                    <include name="myTest1"/>
+                    <include name="myTest2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
