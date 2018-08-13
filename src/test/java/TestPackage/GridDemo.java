@@ -24,7 +24,7 @@ public class GridDemo {
 
     @Test
     @Parameters({"browser","platform","isRemoteExecution"})
-    public void openGoogle(String browser,String platform,boolean isRemoteExecution) throws MalformedURLException{
+    public void openGoogle(String browser,String platform,boolean isRemoteExecution) throws MalformedURLException, InterruptedException{
 
         driver = DriverFactory.createInstance(browser,platform,isRemoteExecution);
         ThreadLocalDriver.setThreadLocalDriver(driver);

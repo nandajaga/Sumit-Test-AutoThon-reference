@@ -1,7 +1,6 @@
 package TestPackage;
 
 import static com.jayway.restassured.RestAssured.given;
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -25,7 +24,6 @@ public class JsonRead {
 	static Object[][] obj;
 	public WebDriver driver = null;
 	 
-
 	@SuppressWarnings("rawtypes")
 	@DataProvider(name = "DataJason", parallel = true)
 	public Object[][] credentials() {
@@ -39,7 +37,6 @@ public class JsonRead {
 			i++;
 		}
 		return obj;
-
 	}
 
 	@BeforeClass
@@ -65,7 +62,6 @@ public class JsonRead {
 	public JsonDataResponse readMethod(Response response) throws FileNotFoundException, IOException, ParseException {
 		JSONParser parser = new JSONParser();
 		JsonDataResponse data = new JsonDataResponse();
-
 		Object obj = parser.parse(response.asString());
 		JSONArray array = (JSONArray) obj;
 		JSONObject jsonObject = (JSONObject) array.get(0);
@@ -77,7 +73,6 @@ public class JsonRead {
 		data.setTitle(job);
 		String body = (String) jsonObject.get("body");
 		data.setBody(body);
-		// System.out.println("*************************");
 		return (data);
 
 	}
@@ -89,7 +84,21 @@ public class JsonRead {
 		Long id1 = Thread.currentThread().getId();
 		System.out.println("Thread " + id1);
 		System.out.println(rowData.getUserID());
-		Thread.sleep(100);
+		driver = DriverFactory.createInstance("chrome", "winoows", false);
+		ThreadLocalDriver.setThreadLocalDriver(driver);
+		driver = ThreadLocalDriver.getThreadLocalDriver();
+		driver.manage().window().maximize();
+		driver.get("https://jsonplaceholder.typicode.com/posts/?id="+rowData.getUserID());
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+	
+	@Test(dataProvider = "DataJason")
+	@Parameters({ "browser", "platform", "isRemoteExecution" })
+	public void test1(String id, JsonDataResponse rowData)
+			throws MalformedURLException, InterruptedException {
+		Long id1 = Thread.currentThread().getId();
+		System.out.println("Thread " + id1);
+		System.out.println(rowData.getUserID());
 		driver = DriverFactory.createInstance("chrome", "winoows", false);
 		ThreadLocalDriver.setThreadLocalDriver(driver);
 		driver = ThreadLocalDriver.getThreadLocalDriver();

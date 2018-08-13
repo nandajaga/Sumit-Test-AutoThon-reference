@@ -1,81 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="2" total="12" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="72439" started-at="2018-08-07T08:10:49Z" finished-at="2018-08-07T08:12:02Z">
+  <suite name="Suite1" duration-ms="71" started-at="2018-08-09T11:53:10Z" finished-at="2018-08-09T11:53:10Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="72439" started-at="2018-08-07T08:10:49Z" finished-at="2018-08-07T08:12:02Z">
-      <class name="TestPackage.JsonRead">
-        <test-method status="PASS" signature="autoThan()[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="autoThan" is-config="true" duration-ms="19282" started-at="2018-08-07T13:40:49Z" finished-at="2018-08-07T13:41:09Z">
+    <test name="test2" duration-ms="67" started-at="2018-08-09T11:53:10Z" finished-at="2018-08-09T11:53:10Z">
+      <class name="RestPost.multipleTest">
+        <test-method status="PASS" signature="autoThan()[pri:0, instance:RestPost.multipleTest@5bc79255]" name="autoThan" is-config="true" duration-ms="10" started-at="2018-08-09T17:23:10Z" finished-at="2018-08-09T17:23:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autoThan -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="27133" started-at="2018-08-07T13:41:09Z" data-provider="DataJason" finished-at="2018-08-07T13:41:36Z">
+        <test-method status="PASS" signature="Testing2(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@5bc79255]" name="Testing2" duration-ms="18" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[55]]>
+                <![CDATA[9]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[TestPackage.JsonDataResponse@357a4488]]>
+                <![CDATA[India]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="26645" started-at="2018-08-07T13:41:09Z" data-provider="DataJason" finished-at="2018-08-07T13:41:35Z">
+        </test-method> <!-- Testing2 -->
+        <test-method status="PASS" signature="Testing2(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@5bc79255]" name="Testing2" duration-ms="7" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[10]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[TestPackage.JsonDataResponse@54c84617]]>
+                <![CDATA[UK]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="25549" started-at="2018-08-07T13:41:09Z" data-provider="DataJason" finished-at="2018-08-07T13:41:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[89]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[TestPackage.JsonDataResponse@3fa01255]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Testing2 -->
+      </class> <!-- RestPost.multipleTest -->
+    </test> <!-- test2 -->
+    <test name="test1" duration-ms="71" started-at="2018-08-09T11:53:10Z" finished-at="2018-08-09T11:53:10Z">
+      <class name="RestPost.multipleTest">
+        <test-method status="PASS" signature="autoThan()[pri:0, instance:RestPost.multipleTest@185d8b6]" name="autoThan" is-config="true" duration-ms="10" started-at="2018-08-09T17:23:10Z" finished-at="2018-08-09T17:23:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="26463" started-at="2018-08-07T13:41:09Z" data-provider="DataJason" finished-at="2018-08-07T13:41:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[34]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[TestPackage.JsonDataResponse@755a7174]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="25963" started-at="2018-08-07T13:41:09Z" data-provider="DataJason" finished-at="2018-08-07T13:41:35Z">
+        </test-method> <!-- autoThan -->
+        <test-method status="PASS" signature="Testing1(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@185d8b6]" name="Testing1" duration-ms="19" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
           <params>
             <param index="0">
               <value>
@@ -84,30 +60,30 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[TestPackage.JsonDataResponse@72c4081d]]>
+                <![CDATA[UK]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="26619" started-at="2018-08-07T13:41:34Z" data-provider="DataJason" finished-at="2018-08-07T13:42:01Z">
+        </test-method> <!-- Testing1 -->
+        <test-method status="PASS" signature="Testing1(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@185d8b6]" name="Testing1" duration-ms="12" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[13]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[TestPackage.JsonDataResponse@3b0a6036]]>
+                <![CDATA[India]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="26648" started-at="2018-08-07T13:41:35Z" data-provider="DataJason" finished-at="2018-08-07T13:42:01Z">
+        </test-method> <!-- Testing1 -->
+        <test-method status="PASS" signature="Testing1(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@185d8b6]" name="Testing1" duration-ms="11" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
           <params>
             <param index="0">
               <value>
@@ -116,30 +92,46 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[TestPackage.JsonDataResponse@ee0a6a2]]>
+                <![CDATA[India]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="25637" started-at="2018-08-07T13:41:35Z" data-provider="DataJason" finished-at="2018-08-07T13:42:01Z">
+        </test-method> <!-- Testing1 -->
+        <test-method status="PASS" signature="Testing1(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@185d8b6]" name="Testing1" duration-ms="20" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[5]]>
+                <![CDATA[4]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[TestPackage.JsonDataResponse@44288b30]]>
+                <![CDATA[UK]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="26456" started-at="2018-08-07T13:41:35Z" data-provider="DataJason" finished-at="2018-08-07T13:42:02Z">
+        </test-method> <!-- Testing1 -->
+        <test-method status="PASS" signature="Testing1(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@185d8b6]" name="Testing1" duration-ms="16" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testing1 -->
+        <test-method status="PASS" signature="Testing1(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@185d8b6]" name="Testing1" duration-ms="21" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
           <params>
             <param index="0">
               <value>
@@ -148,30 +140,46 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[TestPackage.JsonDataResponse@86b990a]]>
+                <![CDATA[UK]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, TestPackage.JsonDataResponse)[pri:0, instance:TestPackage.JsonRead@67b92f0a]" name="test" duration-ms="25438" started-at="2018-08-07T13:41:36Z" data-provider="DataJason" finished-at="2018-08-07T13:42:01Z">
+        </test-method> <!-- Testing1 -->
+        <test-method status="PASS" signature="Testing1(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@185d8b6]" name="Testing1" duration-ms="15" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[21]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[TestPackage.JsonDataResponse@75f262ee]]>
+                <![CDATA[India]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- TestPackage.JsonRead -->
-    </test> <!-- test -->
+        </test-method> <!-- Testing1 -->
+        <test-method status="PASS" signature="Testing1(java.lang.String, java.lang.String)[pri:0, instance:RestPost.multipleTest@185d8b6]" name="Testing1" duration-ms="14" started-at="2018-08-09T17:23:10Z" data-provider="DataJason" finished-at="2018-08-09T17:23:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testing1 -->
+      </class> <!-- RestPost.multipleTest -->
+    </test> <!-- test1 -->
   </suite> <!-- Suite1 -->
 </testng-results>

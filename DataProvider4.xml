@@ -1,0 +1,20 @@
+<suite name="Suite1" parallel="tests">
+	<test name="test1" parallel="tests" thread-count="4"
+		data-provider-thread-count="4">
+		<classes>
+			<class name="RestPost.multipleTest" />
+			<methods>
+				<exclude name="Testing2" />
+			</methods>
+		</classes>
+	</test>
+	<test name="test2" parallel="tests" thread-count="1"
+		data-provider-thread-count="1">
+		<classes>
+			<class name="RestPost.multipleTest" />
+			<methods>
+				<exclude name="Testing1" />
+			</methods>
+		</classes>
+	</test>
+</suite>
