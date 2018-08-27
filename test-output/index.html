@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite1">
-              <span class="suite-name border-passed">Suite1</span>
+              <span class="suite-name border-failed">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite1">
-                    <span>C:\Users\ab36194\git\TestAutothon\DataProvider4.xml</span>
+                    <span>C:\Users\ab36194\git\TestAutothon\solution.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite1">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="MockRun1.solution" hash-for-method="webMobileTest(chrome, [vivo v9, iPhone x])">webMobileTest(chrome, [vivo v9, iPhone x])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="MockRun1.solution" hash-for-method="webMobileTest(chrome, [Samsung j7, iPhone 8])">webMobileTest(chrome, [Samsung j7, iPhone 8])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="MockRun1.solution" hash-for-method="webMobileTest(chrome, [nokia 7 plus, Samsung galaxy j8])">webMobileTest(chrome, [nokia 7 plus, Samsung galaxy j8])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,52 +126,12 @@
                     <div class="method-list-content passed suite-Suite1">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing1(2, UK)">Testing1(2, UK)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="MockRun1.solution" hash-for-method="webMobileTest(chrome, [vivo v7, Samsung a8])">webMobileTest(chrome, [vivo v7, Samsung a8])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing1(1, India)">Testing1(1, India)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing1(6, UK)">Testing1(6, UK)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing1(3, India)">Testing1(3, India)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing1(8, UK)">Testing1(8, UK)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing1(4, UK)">Testing1(4, UK)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing1(5, India)">Testing1(5, India)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing1(7, India)">Testing1(7, India)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing2(10, UK)">Testing2(10, UK)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="RestPost.multipleTest" hash-for-method="Testing2(9, India)">Testing2(9, India)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="MockRun1.solution" hash-for-method="webMobileTest(chrome, [vivo v9 youth, nokia 3310])">webMobileTest(chrome, [vivo v9 youth, nokia 3310])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite1 -->
@@ -162,90 +146,157 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
-          <div class="suite-Suite1-class-passed">
+          <div class="suite-Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">RestPost.multipleTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">MockRun1.solution</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Testing1(2, UK)">
-                  </a> <!-- Testing1(2, UK) -->
-                  <span class="method-name">Testing1</span>
-                  <span class="parameters">(2, UK)</span>
+                  <a name="webMobileTest(chrome, [vivo v9, iPhone x])">
+                  </a> <!-- webMobileTest(chrome, [vivo v9, iPhone x]) -->
+                  <span class="method-name">webMobileTest</span>
+                  <span class="parameters">(chrome, [vivo v9, iPhone x])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;container&apos;]/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div/div/div/a/div[3]/div[1]/div[1]&quot;}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;5CG54423ZV&apos;, ip: &apos;10.140.53.80&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Windows\Temp\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: dde51417c97721ef5b35db33ec5df912
+*** Element info: {Using=xpath, value=//*[@id=&apos;container&apos;]/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div/div/div/a/div[3]/div[1]/div[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at MockRun1.solution.getElement(solution.java:191)
+	at MockRun1.solution.webMobileTest(solution.java:111)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Testing1(1, India)">
-                  </a> <!-- Testing1(1, India) -->
-                  <span class="method-name">Testing1</span>
-                  <span class="parameters">(1, India)</span>
+                  <a name="webMobileTest(chrome, [Samsung j7, iPhone 8])">
+                  </a> <!-- webMobileTest(chrome, [Samsung j7, iPhone 8]) -->
+                  <span class="method-name">webMobileTest</span>
+                  <span class="parameters">(chrome, [Samsung j7, iPhone 8])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;container&apos;]/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div/div/div/a/div[3]/div[1]/div[1]&quot;}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;5CG54423ZV&apos;, ip: &apos;10.140.53.80&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Windows\Temp\scoped_dir3...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: a0e85e1a89f57efcacca3f7c0d65abf6
+*** Element info: {Using=xpath, value=//*[@id=&apos;container&apos;]/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div/div/div/a/div[3]/div[1]/div[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at MockRun1.solution.getElement(solution.java:191)
+	at MockRun1.solution.webMobileTest(solution.java:111)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Testing1(6, UK)">
-                  </a> <!-- Testing1(6, UK) -->
-                  <span class="method-name">Testing1</span>
-                  <span class="parameters">(6, UK)</span>
+                  <a name="webMobileTest(chrome, [nokia 7 plus, Samsung galaxy j8])">
+                  </a> <!-- webMobileTest(chrome, [nokia 7 plus, Samsung galaxy j8]) -->
+                  <span class="method-name">webMobileTest</span>
+                  <span class="parameters">(chrome, [nokia 7 plus, Samsung galaxy j8])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;container&apos;]/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div/div/div/a/div[3]/div[1]/div[1]&quot;}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;5CG54423ZV&apos;, ip: &apos;10.140.53.80&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Windows\Temp\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: 4785fde6436faa25887536542e476270
+*** Element info: {Using=xpath, value=//*[@id=&apos;container&apos;]/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div/div/div/a/div[3]/div[1]/div[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at MockRun1.solution.getElement(solution.java:191)
+	at MockRun1.solution.webMobileTest(solution.java:111)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MockRun1.solution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="webMobileTest(chrome, [vivo v7, Samsung a8])">
+                  </a> <!-- webMobileTest(chrome, [vivo v7, Samsung a8]) -->
+                  <span class="method-name">webMobileTest</span>
+                  <span class="parameters">(chrome, [vivo v7, Samsung a8])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Testing1(3, India)">
-                  </a> <!-- Testing1(3, India) -->
-                  <span class="method-name">Testing1</span>
-                  <span class="parameters">(3, India)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Testing1(8, UK)">
-                  </a> <!-- Testing1(8, UK) -->
-                  <span class="method-name">Testing1</span>
-                  <span class="parameters">(8, UK)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Testing1(4, UK)">
-                  </a> <!-- Testing1(4, UK) -->
-                  <span class="method-name">Testing1</span>
-                  <span class="parameters">(4, UK)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Testing1(5, India)">
-                  </a> <!-- Testing1(5, India) -->
-                  <span class="method-name">Testing1</span>
-                  <span class="parameters">(5, India)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Testing1(7, India)">
-                  </a> <!-- Testing1(7, India) -->
-                  <span class="method-name">Testing1</span>
-                  <span class="parameters">(7, India)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Testing2(10, UK)">
-                  </a> <!-- Testing2(10, UK) -->
-                  <span class="method-name">Testing2</span>
-                  <span class="parameters">(10, UK)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Testing2(9, India)">
-                  </a> <!-- Testing2(9, India) -->
-                  <span class="method-name">Testing2</span>
-                  <span class="parameters">(9, India)</span>
+                  <a name="webMobileTest(chrome, [vivo v9 youth, nokia 3310])">
+                  </a> <!-- webMobileTest(chrome, [vivo v9 youth, nokia 3310]) -->
+                  <span class="method-name">webMobileTest</span>
+                  <span class="parameters">(chrome, [vivo v9 youth, nokia 3310])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,31 +304,18 @@
         </div> <!-- panel Suite1 -->
         <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ab36194\git\TestAutothon\DataProvider4.xml</span>
+            <span class="header-content">C:\Users\ab36194\git\TestAutothon\solution.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite1&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;4&quot; name=&quot;test1&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite name=&quot;Suite1&quot; parallel=&quot;methods&quot; data-provider-thread-count=&quot;5&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;test&quot; parallel=&quot;methods&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;RestPost.multipleTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;exclude name=&quot;Testing2&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- RestPost.multipleTest --&gt;
+      &lt;class name=&quot;MockRun1.solution&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test1 --&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;test2&quot; parallel=&quot;tests&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;RestPost.multipleTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;exclude name=&quot;Testing1&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- RestPost.multipleTest --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test2 --&gt;
+  &lt;/test&gt; &lt;!-- test --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -289,10 +327,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">test1 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">test2 (1 class)</span>
+                <span class="test-name">test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -318,52 +353,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Testing1')
-data.setCell(0, 2, 'RestPost.multipleTest')
-data.setCell(0, 3, 21);
+data.setCell(0, 1, 'webMobileTest')
+data.setCell(0, 2, 'MockRun1.solution')
+data.setCell(0, 3, 175343);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Testing1')
-data.setCell(1, 2, 'RestPost.multipleTest')
-data.setCell(1, 3, 20);
+data.setCell(1, 1, 'webMobileTest')
+data.setCell(1, 2, 'MockRun1.solution')
+data.setCell(1, 3, 136830);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Testing1')
-data.setCell(2, 2, 'RestPost.multipleTest')
-data.setCell(2, 3, 19);
+data.setCell(2, 1, 'webMobileTest')
+data.setCell(2, 2, 'MockRun1.solution')
+data.setCell(2, 3, 104666);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Testing2')
-data.setCell(3, 2, 'RestPost.multipleTest')
-data.setCell(3, 3, 18);
+data.setCell(3, 1, 'webMobileTest')
+data.setCell(3, 2, 'MockRun1.solution')
+data.setCell(3, 3, 65722);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Testing1')
-data.setCell(4, 2, 'RestPost.multipleTest')
-data.setCell(4, 3, 16);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Testing1')
-data.setCell(5, 2, 'RestPost.multipleTest')
-data.setCell(5, 3, 15);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Testing1')
-data.setCell(6, 2, 'RestPost.multipleTest')
-data.setCell(6, 3, 14);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Testing1')
-data.setCell(7, 2, 'RestPost.multipleTest')
-data.setCell(7, 3, 12);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Testing1')
-data.setCell(8, 2, 'RestPost.multipleTest')
-data.setCell(8, 3, 11);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Testing2')
-data.setCell(9, 2, 'RestPost.multipleTest')
-data.setCell(9, 3, 7);
+data.setCell(4, 1, 'webMobileTest')
+data.setCell(4, 2, 'MockRun1.solution')
+data.setCell(4, 3, 33484);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 153 ms</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -378,18 +393,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">RestPost.multipleTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">Testing1</span>
-                <br/>
-                <span class="ignored-method-name">Testing2</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite1" class="panel">
@@ -398,55 +404,61 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">RestPost.multipleTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">MockRun1.solution</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">autoThan</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">autoThan</span>
+                <span class="method-name">ExtentReports1</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Testing1(3, India)</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-name">webMobileTest(chrome, [vivo v9 youth, nokia 3310])</span>
+                <span class="method-start">198 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Testing1(1, India)</span>
-                <span class="method-start">27 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">webMobileTest(chrome, [nokia 7 plus, Samsung galaxy j8])</span>
+                <span class="method-start">198 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Testing1(2, UK)</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-name">webMobileTest(chrome, [vivo v7, Samsung a8])</span>
+                <span class="method-start">198 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Testing1(4, UK)</span>
-                <span class="method-start">27 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">webMobileTest(chrome, [Samsung j7, iPhone 8])</span>
+                <span class="method-start">199 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Testing2(9, India)</span>
-                <span class="method-start">27 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">webMobileTest(chrome, [vivo v9, iPhone x])</span>
+                <span class="method-start">199 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Testing1(7, India)</span>
-                <span class="method-start">28 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Testing1(5, India)</span>
-                <span class="method-start">28 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Testing1(6, UK)</span>
-                <span class="method-start">28 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Testing1(8, UK)</span>
-                <span class="method-start">28 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Testing2(10, UK)</span>
-                <span class="method-start">33 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=webMobileTest status=FAILURE method=solution.webMobileTest(java.lang.String, java.u...)</span>
+                <span class="method-start">33699 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=webMobileTest status=FAILURE method=solution.webMobileTest(java.lang.String, java.u...)</span>
+                <span class="method-start">65932 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=webMobileTest status=SUCCESS method=solution.webMobileTest(java.lang.String, java.u...)</span>
+                <span class="method-start">104869 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=webMobileTest status=FAILURE method=solution.webMobileTest(java.lang.String, java.u...)</span>
+                <span class="method-start">137036 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=webMobileTest status=SUCCESS method=solution.webMobileTest(java.lang.String, java.u...)</span>
+                <span class="method-start">175545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">postJson</span>
+                <span class="method-start">175547 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,20 +1,10 @@
-<suite name="Suite1" parallel="tests">
-	<test name="test1" parallel="tests" thread-count="4"
-		data-provider-thread-count="4">
+<suite name="Suite1" parallel="methods" thread-count="1" data-provider-thread-count="1">
+	<test name="test1">
 		<classes>
-			<class name="RestPost.multipleTest" />
-			<methods>
-				<exclude name="Testing2" />
-			</methods>
-		</classes>
-	</test>
-	<test name="test2" parallel="tests" thread-count="1"
-		data-provider-thread-count="1">
-		<classes>
-			<class name="RestPost.multipleTest" />
+			<class name="TestPackage.JsonRead" />
 			<methods>
 				<exclude name="Testing1" />
 			</methods>
 		</classes>
-	</test>
+		</test>
 </suite>

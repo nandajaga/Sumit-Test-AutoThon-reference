@@ -12,7 +12,7 @@ import java.net.URL;
 
 public class TestRun2  extends Base{
 
-	//@BeforeTest()
+	@BeforeTest()
 	public void setup() throws InterruptedException, MalformedURLException {
         DesiredCapabilities capabilities=DesiredCapabilities.android();
         capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,"");
@@ -25,7 +25,7 @@ public class TestRun2  extends Base{
         driver = new AndroidDriver<MobileElement>(url, capabilities);
 		}
 	
-	@Test()
+	//@Test()
 	public void myTest1() throws InterruptedException {
 	System.setProperty("webdriver.chrome.driver", "C:\\Users\\ab36194\\eclipse-workspace\\TestAutothon\\Drivers\\chromedriver.exe");
 	driver = new ChromeDriver();
@@ -34,13 +34,7 @@ public class TestRun2  extends Base{
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	//@Test()
+	@Test()
 	public void androidTest() throws MalformedURLException, InterruptedException {
 		driver.findElement(By.xpath("//*[@resource-id='android:id/button2']")).click();
         Thread.sleep(5000);
@@ -48,7 +42,7 @@ public class TestRun2  extends Base{
 
 	}
 		
-	@AfterTest()
+	//@AfterTest()
 	public void quitTest() throws InterruptedException {
 		driver.quit();
 	}
